@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+    jhipster6:
+        image: jhipster/jhipster:v6.10.5
+        volumes:
+            - ~/projects/git:/home/jhipster/app
+            - ~/.m2:/home/jhipster/.m2
+        ports:
+            - "18080:8080"
+            - "9000:9000"
+            - "3001:3001"
+        working_dir: /home/jhipster/app
+
+    jhipster7:
+        image: jhipster/jhipster:v7.9.3
+        volumes:
+            - ~/projects/git:/home/jhipster/app
+            - ~/.m2:/home/jhipster/.m2
+        ports:
+            - "28080:8080"
+            - "9000:9000"
+            - "3001:3001"
+        working_dir: /home/jhipster/app
+    
+    jdl-studio:
+        image: jhipster/jdl-studio:latest
+        ports:
+            - "38080:80"
