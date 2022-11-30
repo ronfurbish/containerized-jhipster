@@ -23,17 +23,19 @@ services:
             - "29000:9000"
             - "23001:3001"
         working_dir: /home/jhipster/app
-    jhipsterDotNetCore:
-        image: jhipster-generator-dotnetcore:latest
-        volumes:
-        #to-do parameterize ~/projects/git.  In the meanwhile you'll need to tweak ~/projects/git to a folder location on your computer that you use for development.
-            - ~/projects/git:/home/jhipster/app
-         #   - ~/.m2:/home/jhipster/.m2
-        ports:
-            - "48080:8080"
-            - "49000:9000"
-            - "43001:3001"
-        working_dir: /home/jhipster/app        
+
+    # Didn't like how this was working need to learn more and come back to it
+    # jhipsterDotNetCore:
+    #     image: jhipster-generator-dotnetcore:latest
+    #     volumes:
+    #     #to-do parameterize ~/projects/git.  In the meanwhile you'll need to tweak ~/projects/git to a folder location on your computer that you use for development.
+    #         - ~/projects/git:/home/jhipster/app
+    #      #   - ~/.m2:/home/jhipster/.m2
+    #     ports:
+    #         - "48080:8080"
+    #         - "49000:9000"
+    #         - "43001:3001"
+    #     working_dir: /home/jhipster/app        
     
     jdl-studio:
         image: jhipster/jdl-studio:latest
