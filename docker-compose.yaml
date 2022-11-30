@@ -3,6 +3,7 @@ services:
     jhipster6:
         image: jhipster/jhipster:v6.10.5
         volumes:
+        #to-do parameterize ~/projects/git.  In the meanwhile you'll need to tweak ~/projects/git to a folder location on your computer that you use for development.
             - ~/projects/git:/home/jhipster/app
             - ~/.m2:/home/jhipster/.m2
         ports:
@@ -14,6 +15,7 @@ services:
     jhipster7:
         image: jhipster/jhipster:v7.9.3
         volumes:
+         #to-do parameterize ~/projects/git.  In the meanwhile you'll need to tweak ~/projects/git to a folder location on your computer that you use for development.
             - ~/projects/git:/home/jhipster/app
             - ~/.m2:/home/jhipster/.m2
         ports:
@@ -24,6 +26,7 @@ services:
     jhipsterDotNetCore:
         image: jhipster-generator-dotnetcore:latest
         volumes:
+        #to-do parameterize ~/projects/git.  In the meanwhile you'll need to tweak ~/projects/git to a folder location on your computer that you use for development.
             - ~/projects/git:/home/jhipster/app
          #   - ~/.m2:/home/jhipster/.m2
         ports:
