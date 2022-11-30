@@ -7,8 +7,8 @@ services:
             - ~/.m2:/home/jhipster/.m2
         ports:
             - "18080:8080"
-            - "9000:9000"
-            - "3001:3001"
+            - "19000:9000"
+            - "13001:3001"
         working_dir: /home/jhipster/app
 
     jhipster7:
@@ -18,9 +18,19 @@ services:
             - ~/.m2:/home/jhipster/.m2
         ports:
             - "28080:8080"
-            - "9000:9000"
-            - "3001:3001"
+            - "29000:9000"
+            - "23001:3001"
         working_dir: /home/jhipster/app
+    jhipsterDotNetCore:
+        image: jhipster-generator-dotnetcore:latest
+        volumes:
+            - ~/projects/git:/home/jhipster/app
+         #   - ~/.m2:/home/jhipster/.m2
+        ports:
+            - "48080:8080"
+            - "49000:9000"
+            - "43001:3001"
+        working_dir: /home/jhipster/app        
     
     jdl-studio:
         image: jhipster/jdl-studio:latest
