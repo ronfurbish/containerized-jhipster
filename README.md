@@ -1,4 +1,4 @@
-# jhipster
+# jhipster docker compose 
 
 I created this as a quick and easy way to spin up jhipster containers so I can easily toggle between multiple versions as needed.
 
