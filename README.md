@@ -14,7 +14,7 @@ I created this as a quick and easy way to spin up JHipster containers so I can e
   docker compose up -d jhipster7
   ```
   
-3. Sping up multiple services
+3. Spin up multiple services, but not all
   ```
   docker compose up -d jhipster7 jdl-studio
   ```
